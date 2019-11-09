@@ -3,6 +3,7 @@ package com.maryjustudio.radionanny
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.maryjustudio.radionanny.ui.main.MainFragment
+import com.maryjustudio.radionanny.ui.main.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
+                .replace(R.id.container, SettingsFragment.newInstance())
                 .commitNow()
         }
     }
